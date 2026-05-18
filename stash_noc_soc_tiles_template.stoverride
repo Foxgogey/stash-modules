@@ -1,8 +1,5 @@
 name: NOC/SOC Availability Tiles
-# Replace YOUR_RAW_BASE_URL below with a URL where stash_tile_check.js is available.
-# Example: https://raw.githubusercontent.com/<user>/<repo>/main/stash_tile_check.js
-# Then import this .stoverride via Stash -> Override -> Download Override.
-desc: AI, Media and internal infra availability tiles for Stash
+desc: AI, Media and public Zabbix availability tiles for Stash
 
 tiles:
   - name: tile-chatgpt
@@ -37,73 +34,48 @@ tiles:
     title: YouTube
     content: Checking...
     icon: play.rectangle.fill
-    interval: 900
+    interval: 600
     argument: YouTube|https://www.youtube.com|play.rectangle.fill
 
   - name: tile-netflix
     title: Netflix
     content: Checking...
     icon: tv
-    interval: 900
+    interval: 600
     argument: Netflix|https://www.netflix.com|tv
-
-  - name: tile-proxmox
-    title: Proxmox
-    content: Checking via WG...
-    icon: server.rack
-    interval: 300
-    argument: Proxmox|https://192.168.20.158:8006|server.rack
 
   - name: tile-zabbix
     title: Zabbix
-    content: Checking via WG...
-    icon: chart.xyaxis.line
+    content: Checking...
+    icon: chart.bar.xaxis
     interval: 300
-    argument: Zabbix|http://192.168.20.153|chart.xyaxis.line
-
-  - name: tile-wazuh
-    title: Wazuh
-    content: Checking via WG...
-    icon: shield.lefthalf.filled
-    interval: 300
-    argument: Wazuh|https://192.168.20.152|shield.lefthalf.filled
-
-  - name: tile-rustdesk
-    title: RustDesk
-    content: Set HTTP status URL
-    icon: desktopcomputer
-    interval: 300
-    # RustDesk hbbs/hbbr are not HTTP services. Put an HTTP health endpoint here: Uptime Kuma, Nginx status page, Webmin, or a small web check on the RustDesk VPS.
-    argument: RustDesk|http://192.168.20.REPLACE_ME|desktopcomputer
+    argument: Zabbix|https://inno-zabbix.duckdns.org|chart.bar.xaxis
 
 script-providers:
   tile-chatgpt:
     url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
     interval: 86400
+
   tile-claude:
     url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
     interval: 86400
+
   tile-gemini:
     url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
     interval: 86400
+
   tile-perplexity:
     url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
     interval: 86400
+
   tile-youtube:
     url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
     interval: 86400
+
   tile-netflix:
     url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
     interval: 86400
-  tile-proxmox:
-    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
-    interval: 86400
+
   tile-zabbix:
-    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
-    interval: 86400
-  tile-wazuh:
-    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
-    interval: 86400
-  tile-rustdesk:
     url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
     interval: 86400
