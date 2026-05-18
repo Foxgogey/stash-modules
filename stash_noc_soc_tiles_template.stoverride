@@ -78,32 +78,32 @@ tiles:
 
 script-providers:
   tile-chatgpt:
-    url: YOUR_RAW_BASE_URL/stash_tile_check.js
+    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js/stash_tile_check.js
     interval: 86400
   tile-claude:
-    url: YOUR_RAW_BASE_URL/stash_tile_check.js
+    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js/stash_tile_check.js
     interval: 86400
   tile-gemini:
-    url: YOUR_RAW_BASE_URL/stash_tile_check.js
+    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js/stash_tile_check.js
     interval: 86400
   tile-perplexity:
-    url: YOUR_RAW_BASE_URL/stash_tile_check.js
+    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js/stash_tile_check.js
     interval: 86400
   tile-youtube:
-    url: YOUR_RAW_BASE_URL/stash_tile_check.js
+    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js/stash_tile_check.js
     interval: 86400
   tile-netflix:
-    url: YOUR_RAW_BASE_URL/stash_tile_check.js
+    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js/stash_tile_check.js
     interval: 86400
   tile-proxmox:
-    url: YOUR_RAW_BASE_URL/stash_tile_check.js
+    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js/stash_tile_check.js
     interval: 86400
   tile-zabbix:
-    url: YOUR_RAW_BASE_URL/stash_tile_check.js
+    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js/stash_tile_check.js
     interval: 86400
   tile-wazuh:
-    url: YOUR_RAW_BASE_URL/stash_tile_check.js
+    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js/stash_tile_check.js
     interval: 86400
   tile-rustdesk:
-    url: YOUR_RAW_BASE_URL/stash_tile_check.js
+    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js/stash_tile_check.js
     interval: 86400
