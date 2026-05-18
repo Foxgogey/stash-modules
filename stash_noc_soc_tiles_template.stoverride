@@ -1,5 +1,5 @@
-name: NOC/SOC Availability Tiles
-desc: AI, Media and public Zabbix availability tiles for Stash
+name: AI and Messaging Availability Tiles
+desc: AI services, media platforms and messengers availability tiles for Stash
 
 tiles:
   - name: tile-chatgpt
@@ -30,6 +30,34 @@ tiles:
     interval: 600
     argument: Perplexity|https://www.perplexity.ai|magnifyingglass.circle
 
+  - name: tile-copilot
+    title: Copilot
+    content: Checking...
+    icon: keyboard
+    interval: 600
+    argument: Copilot|https://copilot.microsoft.com|keyboard
+
+  - name: tile-grok
+    title: Grok
+    content: Checking...
+    icon: xmark.circle
+    interval: 600
+    argument: Grok|https://grok.com|xmark.circle
+
+  - name: tile-poe
+    title: Poe
+    content: Checking...
+    icon: message.circle
+    interval: 600
+    argument: Poe|https://poe.com|message.circle
+
+  - name: tile-openrouter
+    title: OpenRouter
+    content: Checking...
+    icon: arrow.triangle.branch
+    interval: 600
+    argument: OpenRouter|https://openrouter.ai|arrow.triangle.branch
+
   - name: tile-youtube
     title: YouTube
     content: Checking...
@@ -44,12 +72,19 @@ tiles:
     interval: 600
     argument: Netflix|https://www.netflix.com|tv
 
-  - name: tile-zabbix
-    title: Zabbix
+  - name: tile-telegram
+    title: Telegram
     content: Checking...
-    icon: chart.bar.xaxis
-    interval: 300
-    argument: Zabbix|https://inno-zabbix.duckdns.org|chart.bar.xaxis
+    icon: paperplane.fill
+    interval: 600
+    argument: Telegram|https://web.telegram.org|paperplane.fill
+
+  - name: tile-whatsapp
+    title: WhatsApp
+    content: Checking...
+    icon: phone.bubble.left
+    interval: 600
+    argument: WhatsApp|https://web.whatsapp.com|phone.bubble.left
 
 script-providers:
   tile-chatgpt:
@@ -68,6 +103,22 @@ script-providers:
     url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
     interval: 86400
 
+  tile-copilot:
+    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
+    interval: 86400
+
+  tile-grok:
+    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
+    interval: 86400
+
+  tile-poe:
+    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
+    interval: 86400
+
+  tile-openrouter:
+    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
+    interval: 86400
+
   tile-youtube:
     url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
     interval: 86400
@@ -76,6 +127,10 @@ script-providers:
     url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
     interval: 86400
 
-  tile-zabbix:
+  tile-telegram:
+    url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
+    interval: 86400
+
+  tile-whatsapp:
     url: https://raw.githubusercontent.com/Foxgogey/stash-modules/main/stash_tile_check.js
     interval: 86400
